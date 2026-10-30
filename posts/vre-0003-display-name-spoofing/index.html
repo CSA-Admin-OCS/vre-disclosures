@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+
+<link rel="canonical" href="https://csa-admin-ocs.github.io/vre-disclosures/posts/vre-0003-display-name-spoofing/" />
+
+<title>VRE-0003-display-name-spoofing | </title>
+<meta property="og:site_name" content=""/>
+<meta property="og:title" content="VRE-0003-display-name-spoofing | "/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://csa-admin-ocs.github.io/vre-disclosures/posts/vre-0003-display-name-spoofing/"/>
+<meta property="og:description" content=""/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="VRE-0003-display-name-spoofing"/>
+<meta name="twitter:description" content=""/>
+<link rel="alternate" type="application/atom+xml" title="" href="https://csa-admin-ocs.github.io/vre-disclosures/atom.xml">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet"></noscript>
+    <style>
+html{font-family:"Source Serif 4",Georgia,serif;font-size:1rem;line-height:1.7;margin:auto;max-width:70ch;padding:1.5rem 1em 3em}
+img{max-width:100%}img:not([src$=".svg"]),article>div,blockquote,pre{border-radius:.4rem}img[src$="#pixelate"]{image-rendering:pixelated}
+h1,h2,h3,h4,h5,h6{font-family:"Source Serif 4",Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:1.5rem 0 .75rem}
+h1{font-size:1.75rem}h2{font-size:1.375rem}h3{font-size:1.125rem}
+p{text-align:justify}p,ul,ol,article>footer,article>header{margin:0 0 1.5rem}
+pre,blockquote{padding:1.5rem;margin:0 0 1.5rem}pre{overflow-x:auto;font-size:.875rem;line-height:1.5}pre code{background:0!important;padding:0;font-size:inherit}code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.9em;padding:.15em .4em;border-radius:.25rem}blockquote>*:last-child{margin-bottom:0}
+article>img,article>p>img,article>div{display:block;margin-bottom:1.5rem;width:100%}
+.yt{aspect-ratio:16/9;width:100%;overflow:hidden}.yt iframe{width:100%;height:100%;border:0}
+.s{font-size:.85rem}
+.theme{display:inline-block;width:1.125rem;height:1.125rem;vertical-align:middle;margin-bottom:.15rem}.theme img,.theme svg{width:100%;height:100%}
+html.light .theme img:first-child,html.light .theme svg:first-child,html.dark .theme img:last-child,html.dark .theme svg:last-child{display:none}
+header strong{font-family:"Source Serif 4",Georgia,serif;font-weight:600;color:var(--accent)}.site-icon{width:2.25rem;height:2.25rem;vertical-align:middle;margin-right:1rem;color:var(--accent)}.header-brand{display:flex;align-items:center}.custom-icon{height:auto;max-height:3rem;width:auto;margin-right:1rem}body>footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+body>footer img,body>footer svg{width:1em;height:1em;vertical-align:-0.125em}
+.tags{list-style:none;padding:0;margin:.75rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem 1rem}.tags li{display:inline}
+nav{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin-bottom:1.5rem}nav a{font-weight:500}nav img,nav svg{display:none}
+.p{list-style:none;padding:0;margin:0 0 1.5rem}.p li{display:flex;gap:1.5rem;margin-bottom:.75rem;align-items:baseline}.p li:last-child{margin-bottom:0}.p time{opacity:.7;flex-shrink:0}
+.profile-pic{width:8rem;height:8rem;border-radius:50%;object-fit:cover;display:block;margin:0 auto 1.5rem}
+.projects .project{margin-bottom:1.5rem}.project header{display:flex;align-items:baseline;gap:.75rem;margin-bottom:.75rem}.project header h2{margin:0;font-size:1.375rem}.project-emoji{font-size:1.5rem}.project-image{max-width:200px;aspect-ratio:1;object-fit:cover;float:right;margin:0 0 1.5rem 1.5rem;border-radius:.4rem}.project p{margin-bottom:.75rem}.project .tags{margin:0}
+.lb{position:fixed;inset:0;background:#000d;display:flex;align-items:center;justify-content:center;z-index:999;cursor:pointer}.lb img{max-width:95vw;max-height:95vh}
+@media(max-width:30em){header .desc{display:none}}
+    </style>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <style>
+    /* Light theme */
+    html.light{color-scheme:light;background:#FAF7F2;--tc:#FAF7F2;--accent:#B85450;--accent-hover:#7A3533;color:#1a1a1a}
+    html.light a{color:var(--accent);text-decoration:underline}
+    html.light a:visited{color:var(--accent)}
+    html.light a:hover{color:var(--accent-hover)}
+    html.light header>div>span>a{text-decoration:none}html.light header>div>span>a:hover{text-decoration:underline}
+    html.light p,html.light ul,html.light ol,html.light .desc{color:#3a3a3a}
+    html.light h1,html.light h2,html.light h3,html.light h4,html.light h5,html.light h6{color:#1a1a1a}
+    html.light strong{color:#1a1a1a}html.light header strong{color:var(--accent)}
+    html.light blockquote{border-left:3px solid var(--accent);color:#555}
+    html.light pre,html.light article>img,html.light article>p>img{background:#f0ebe3}
+    html.light pre{background:#f0ebe3!important}
+    html.light code{background:#f0ebe3;color:#1a1a1a}
+    html.light hr{border-color:#e0d9ce}
+    /* Dark theme */
+    html.dark{color-scheme:dark;background:#141413;--tc:#141413;--accent:#E07A5F;--accent-hover:#F4A594;color:#e8e8e8}
+    html.dark a{color:var(--accent);text-decoration:underline}
+    html.dark a:visited{color:var(--accent)}
+    html.dark a:hover{color:var(--accent-hover)}
+    html.dark header>div>span>a{text-decoration:none}html.dark header>div>span>a:hover{text-decoration:underline}
+    html.dark p,html.dark ul,html.dark ol,html.dark .desc{color:#a0a0a0}
+    html.dark h1,html.dark h2,html.dark h3,html.dark h4,html.dark h5,html.dark h6{color:#fff}
+    html.dark strong{color:#fff}html.dark header strong{color:var(--accent)}
+    html.dark blockquote{border-left:3px solid var(--accent);color:#a0a0a0}
+    html.dark img[src$=".svg"],html.dark nav svg,html.dark .theme svg,html.dark footer svg{filter:invert(1)}
+    html.dark pre,html.dark article>img,html.dark article>p>img{background:#1e1e1d}
+    html.dark pre{background:#1e1e1d!important}
+    html.dark code{background:#1e1e1d;color:#e8e8e8}
+    html.dark hr{border-color:#2a2a29}
+    /* Shared styles */
+    a.active{color:var(--accent)}
+    a:focus-visible{outline:2px solid currentColor;outline-offset:2px;border-radius:2px}
+    hr{border:0;border-top:1px solid;clear:both;margin:1.5rem 0}
+    blockquote{border-left:3px solid var(--accent);padding-left:1.25rem;font-style:italic}
+    .skip-link{position:absolute;top:-100%;left:0;padding:.5rem 1rem;background:var(--accent);color:#fff;z-index:1000}.skip-link:focus{top:0}
+    </style>
+    <meta name="theme-color" id="tc"><script>(function(){var m=matchMedia('(prefers-color-scheme:dark)'),t=localStorage.theme||(m.matches?'dark':'light'),h=document.documentElement,c=document.getElementById('tc');h.className=t;function u(){c.content=getComputedStyle(h).getPropertyValue('--tc')}u();window.T=function(){t=t==='dark'?'light':'dark';localStorage.theme=t;h.className=t;u()}})()</script>
+    
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    
+    <header>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+            <span class="header-brand"><a href="https://csa-admin-ocs.github.io/vre-disclosures"><strong></strong></a></span>
+            <a href="#" onclick="T();return false" class="theme" aria-label="Toggle theme" title="Toggle theme"><img src="/icons/light.svg" alt="Light mode"><img src="/icons/asleep.svg" alt="Dark mode"></a>
+        </div>
+        <hr>
+        <nav>
+            <a href="https://csa-admin-ocs.github.io/vre-disclosures/">Home</a>
+            <a href="https://csa-admin-ocs.github.io/vre-disclosures/posts/" class="active">Posts</a>
+            </nav>
+    </header>
+    <hr>
+    <main id="main">
+    
+<article>
+  <header>
+    <h1>VRE-0003-display-name-spoofing</h1>
+    <time class="s" datetime="2026-10-29">29 Oct 2026</time>
+  </header>
+  
+  <table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td>VRE ID</td><td>VRE-0003</td></tr>
+<tr><td>Author</td><td>ex1stencee</td></tr>
+<tr><td>VRE</td><td>VRE Team</td></tr>
+<tr><td>Date</td><td>2026-10-09</td></tr>
+<tr><td>Severity</td><td>High</td></tr>
+<tr><td>Status</td><td>In Progress</td></tr>
+<tr><td>Affected Product</td><td>Spring</td></tr>
+<tr><td>Affected Project</td><td>Group Chat</td></tr>
+</tbody></table>
+<h2 id="description">Description</h2>
+<p>Group chat verifies which user is logged into the chat using their display name, which can be editted through the profile settings.</p>
+<h2 id="impact">Impact</h2>
+<p>The group chat service currently uses display names in order to verify which user has permissions to edit and delete messages.</p>
+<p>Entire extent of impact is unknown, as other projects may also incorrectly use display names for verification.</p>
+<h2 id="proof-of-concept-poc">Proof of Concept (PoC)</h2>
+<p>Display names are edited through the profile settings page at <code>https://pages.opencodingsociety.com/profile</code>. Delete requests can be sent like so:</p>
+<pre class="giallo" style="color: #CDD6F4; background-color: #1E1E2E;" ><code data-lang="plain"><span class="giallo-l"><span>curl -sS -i -X DELETE --cookie &quot;jwt_java_spring=$TOKEN&quot; https://spring.opencodingsociety.com/api/groups/chat/group-id/messages/message-id&gt;</span></span></code></pre><h2 id="suggested-fix-optional">Suggested Fix (Optional)</h2>
+<p>[Describe the recommended remediation or mitigation, if known.]</p>
+<p>[Optional code example or configuration change]</p>
+<h2 id="references-optional">References (Optional)</h2>
+<p>[Related documentation, advisories, tickets, or CVEs]</p>
+<h2 id="notes-optional">Notes (Optional)</h2>
+<p>[Any additional context, limitations, or follow-up information.]</p>
+
+  
+  
+  
+</article>
+</main>
+    <hr>
+    <footer class="s">
+        
+        
+    </footer>
+    
+    
+    
+    <script>document.querySelectorAll('article img[srcset]').forEach(i=>{if(i.closest('a'))return;i.style.cursor='pointer';i.onclick=()=>{let d=document.createElement('div'),s=i.srcset.split(',').pop().trim().split(' ')[0];d.className='lb';d.innerHTML='<img src="'+s+'">';document.body.style.overflow='hidden';d.onclick=()=>{d.remove();document.body.style.overflow=''};document.body.appendChild(d)}})</script>
+    </body>
+</html>
