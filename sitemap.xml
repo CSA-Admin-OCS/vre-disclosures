@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://csa-admin-ocs.github.io/vre-disclosures/</loc>
+    </url>
+    <url>
+        <loc>https://csa-admin-ocs.github.io/vre-disclosures/posts/</loc>
+    </url>
+    <url>
+        <loc>https://csa-admin-ocs.github.io/vre-disclosures/posts/vre-0001-author-spoofing/</loc>
+        <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+        <loc>https://csa-admin-ocs.github.io/vre-disclosures/posts/vre-0003-display-name-spoofing/</loc>
+        <lastmod>2026-10-29</lastmod>
+    </url>
+</urlset>
