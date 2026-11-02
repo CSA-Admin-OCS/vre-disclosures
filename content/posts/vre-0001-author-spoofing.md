@@ -62,7 +62,9 @@ Tested against endpoint `wss://spring.opencodingsociety.com/ws-chat/105/wdmpbqjv
 
 ## Suggested Fix 
 
-Fix proposed in [#213](https://github.com/Open-Coding-Society/spring/pull/213).
+Fix proposed in [#213](https://github.com/Open-Coding-Society/spring/pull/213), patched with backwards compatibility in [#241](https://github.com/Open-Coding-Society/spring/pull/241).
+
+Basically just entails internal resolving of the `sender` field, sorted into `author` and `author_uid` fields instead. UIDs are parsed from the received Principal (from Websocket) and appended to author_uid; internal lookups perform parsing of `author` (display name, like `"Lucas"`) by performing a `Person` lookup via UID.
 
 ## References
 
