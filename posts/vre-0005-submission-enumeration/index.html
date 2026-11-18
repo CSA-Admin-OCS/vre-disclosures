@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  
+    
+  <meta name="description" content="xxxx xxxx xxxx">
+<link rel="canonical" href="https://csa-admin-ocs.github.io/vre-disclosures/posts/vre-0005-submission-enumeration/">
+<meta property="og:site_name" content="VRE Disclosures">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VRE-0005-submission-enumeration">
+<meta property="og:description" content="xxxx xxxx xxxx">
+<meta property="og:url" content="https://csa-admin-ocs.github.io/vre-disclosures/posts/vre-0005-submission-enumeration/">
+<meta property="og:locale" content="en">
+
+
+<meta property="article:published_time" content="2026-11-13">
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VRE-0005-submission-enumeration">
+<meta name="twitter:description" content="xxxx xxxx xxxx">
+
+
+
+  <title>VRE-0005-submission-enumeration</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://csa-admin-ocs.github.io/vre-disclosures/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://csa-admin-ocs.github.io/vre-disclosures/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://csa-admin-ocs.github.io/vre-disclosures/img/apple-touch-icon.png">
+  
+  <style>
+
+  /* light mode colors */
+  body {
+    --primary-color: #5871a2;
+    --primary-pale-color: #5871a233;
+    --primary-decoration-color: #5871a210;
+    --bg-color: #ffffff;
+    --text-color: #2f3030;
+    --text-pale-color: #767676;
+    --text-decoration-color: #a9a9a9;
+    --highlight-mark-color: #5f75b020;
+
+    --callout-note-color: #5871a2;
+    --callout-tip-color: #268556;
+    --callout-important-color: #885fc9;
+    --callout-warning-color: #ab6632;
+    --callout-caution-color: #c64e4e;
+  }
+
+  /* dark mode colors */
+  body.dark {
+    --primary-color: #6f8fd1;
+    --primary-pale-color: #6f8fd166;
+    --primary-decoration-color: #6f8fd112;
+    --bg-color: #1c1c1c;
+    --text-color: #c1c1c1;
+    --text-pale-color: #848484;
+    --text-decoration-color: #5f5f5f;
+    --highlight-mark-color: #8296cb3b;
+
+    --callout-note-color: #6f8fd1;
+    --callout-tip-color: #47976f;
+    --callout-important-color: #9776cd;
+    --callout-warning-color: #ad7a52;
+    --callout-caution-color: #d06161;
+  }
+
+  /* typography */
+  body {
+    --main-font: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --code-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --homepage-max-width: 768px;
+    --main-max-width: 768px;
+    --avatar-size: 60px;
+    --font-size: 16px;
+    --line-height: 1.75;
+    --img-border-radius: 0px;
+    --detail-border-radius: 0px;
+    --dark-mode-img-brightness: 0.75;
+    --dark-mode-chart-brightness: 0.75;
+    --inline-code-border-radius: 2px;
+    --inline-code-bg-color: var(--primary-decoration-color);
+    --block-code-border-radius: 0px;
+    --block-code-border-color: var(--primary-color);
+    --detail-border-color: var(--primary-color);
+  }
+
+</style>
+
+  <link rel="stylesheet" href="https://csa-admin-ocs.github.io/vre-disclosures/main.css">
+  
+
+<link id="hl" rel="stylesheet" type="text/css" href="/giallo-light.css" />
+
+
+
+
+  
+</head>
+
+<body class="post">
+  
+  <script>
+    const theme = sessionStorage.getItem('theme');
+    const match = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if ((theme && theme == 'dark') || (!theme && match)) {
+      document.body.classList.add('dark');
+      const hl = document.querySelector('link#hl');
+      if (hl) hl.href = 'https://csa-admin-ocs.github.io/vre-disclosures/giallo-dark.css';
+    }
+  </script>
+  
+  
+<div id="wrapper">
+  <div id="blank"></div>
+  <aside>
+    
+    
+    <nav>
+      <ul>
+        
+        <li>
+          <a class="h2" href="#vre-0005-submission-enumeration">[VRE-0005-submission-enumeration]</a>
+          
+          <ul>
+            
+            <li>
+              <a class="h3" href="#description">Description</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#impact">Impact</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#proof-of-concept-poc">Proof of Concept (PoC)</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#suggested-fix">Suggested Fix</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#references">References</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#notes">Notes</a>
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+      </ul>
+    </nav>
+    
+    
+    <button id="back-to-top" aria-label="back to top">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+
+    </button>
+    
+  </aside>
+  <main>
+    
+<header>
+  <nav>
+    <a id="back-link" href="https://csa-admin-ocs.github.io/vre-disclosures/posts">← Back</a>
+  </nav>
+</header>
+
+
+    <div>
+      
+      
+      
+      
+      <div id="copy-cfg" style="display: none;" data-copy-icon="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;18&quot; height=&quot;18&quot;&gt;&lt;path d=&quot;M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+" data-check-icon="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;18&quot; height=&quot;18&quot;&gt;&lt;path d=&quot;M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05093 10.2212L10.0007 15.1709Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+"></div>
+      
+      <article class="prose">
+        <h1>VRE-0005-submission-enumeration</h1>
+        
+        <div id="post-info">
+          <div id="date">
+            <span id="publish">Nov 13, 2026</span>
+            </div>
+
+          
+        </div>
+
+        
+        
+
+        
+
+        <h1 id="vre-0005-submission-enumeration">[VRE-0005-submission-enumeration]<a class="zola-anchor" href="#vre-0005-submission-enumeration" aria-label="Anchor link for: vre-0005-submission-enumeration" style="visibility: hidden;"></a>
+</h1>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td>VRE ID</td><td>VRE-0005</td></tr>
+<tr><td>Author</td><td>mataiodoxion</td></tr>
+<tr><td>VRE</td><td>OCS VRE Team</td></tr>
+<tr><td>Date</td><td>2026-11-04</td></tr>
+<tr><td>Severity</td><td>Medium</td></tr>
+<tr><td>Status</td><td>In Review</td></tr>
+<tr><td>Affected Product</td><td>Spring</td></tr>
+<tr><td>Affected Project</td><td>Assignments</td></tr>
+</tbody></table>
+<h2 id="description">Description<a class="zola-anchor" href="#description" aria-label="Anchor link for: description" style="visibility: hidden;"></a>
+</h2>
+<p>The endpoint for viewing submissions of a specific student is completely open to anybody with any level of authentication:</p>
+<pre class="giallo z-l-code z-d-code" ><code data-lang="java"><span class="giallo-l"><span class="z-l-5 z-d-3">//</span><span class="z-l-5 z-d-3"> src/main/java/com/spring/mvc/assigments/AssignmentsApiController.java</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3">/**</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> * A GET endpoint to retrieve all submissions for a student.</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> * </span><span class="z-l-8 z-d-10">@param</span><span class="z-l-9 z-d-12"> studentId</span><span class="z-l-5 z-d-3"> The ID of the student.</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> * </span><span class="z-l-8 z-d-10">@return</span><span class="z-l-5 z-d-3"> A list of all submissions for the student.</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> * If the student is not found, returns a 404 error.</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> * If the student has no submissions, returns an empty list.</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> * If the student has submissions, returns a list of AssignmentSubmissionReturnDto objects.</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> */</span></span>
+<span class="giallo-l"><span>@</span><span class="z-l-8 z-d-10">Transactional</span></span>
+<span class="giallo-l"><span>@</span><span class="z-l-8 z-d-10">GetMapping</span><span>(</span><span class="z-l-2 z-d-6">&quot;</span><span class="z-l-2 z-d-6">/submissions/student/{studentId}</span><span class="z-l-2 z-d-6">&quot;</span><span>)</span></span>
+<span class="giallo-l"><span class="z-l-8 z-d-10">public</span><span> ResponseEntity</span><span class="z-l-8 z-d-10">&lt;</span><span class="z-l-8 z-d-10">?</span><span class="z-l-8 z-d-10">&gt;</span><span class="z-l-6 z-d-7"> getSubmissions</span><span>(</span><span>@</span><span class="z-l-8 z-d-10">PathVariable</span><span> Long</span><span> studentId</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span class="z-l-8 z-d-10">    if</span><span> (</span><span>personRepo</span><span>.</span><span class="z-l-6 z-d-7">findById</span><span>(</span><span>studentId</span><span>)</span><span>.</span><span class="z-l-6 z-d-7">isEmpty</span><span>(</span><span>)</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span class="z-l-8 z-d-10">        return</span><span> ResponseEntity</span><span>.</span><span class="z-l-6 z-d-7">status</span><span>(</span><span>HttpStatus</span><span>.</span><span>NOT_FOUND</span><span>)</span><span>.</span><span class="z-l-6 z-d-7">body</span><span>(</span><span class="z-l-2 z-d-6">&quot;</span><span class="z-l-2 z-d-6">Student not found</span><span class="z-l-2 z-d-6">&quot;</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    List</span><span>&lt;</span><span class="z-l-8 z-d-10">AssignmentSubmissionReturnDto</span><span>&gt;</span><span> dtos</span><span class="z-l-8 z-d-10"> =</span><span> Stream</span><span>.</span><span class="z-l-6 z-d-7">concat</span><span>(</span></span>
+<span class="giallo-l"><span>        submissionRepo</span><span>.</span><span class="z-l-6 z-d-7">findBySubmitterId</span><span>(</span><span>studentId</span><span>)</span><span>.</span><span class="z-l-6 z-d-7">stream</span><span>(</span><span>)</span><span>,</span></span>
+<span class="giallo-l"><span>        groupRepo</span><span>.</span><span class="z-l-6 z-d-7">findGroupsByPersonId</span><span>(</span><span>studentId</span><span>)</span><span>.</span><span class="z-l-6 z-d-7">stream</span><span>(</span><span>)</span></span>
+<span class="giallo-l"><span>            .</span><span class="z-l-6 z-d-7">flatMap</span><span>(</span><span>group </span><span class="z-l-8 z-d-10">-&gt;</span><span> submissionRepo</span><span>.</span><span class="z-l-6 z-d-7">findBySubmitterId</span><span>(</span><span>group</span><span>.</span><span class="z-l-6 z-d-7">getId</span><span>(</span><span>)</span><span>)</span><span>.</span><span class="z-l-6 z-d-7">stream</span><span>(</span><span>)</span><span>)</span></span>
+<span class="giallo-l"><span>    )</span></span>
+<span class="giallo-l"><span>    .</span><span class="z-l-6 z-d-7">map</span><span>(</span><span>AssignmentSubmissionReturnDto</span><span class="z-l-8 z-d-10">:</span><span class="z-l-8 z-d-10">:</span><span class="z-l-8 z-d-10">new</span><span>)</span></span>
+<span class="giallo-l"><span>    .</span><span class="z-l-6 z-d-7">toList</span><span>(</span><span>)</span><span>;</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-l-8 z-d-10">    return</span><span> ResponseEntity</span><span>.</span><span class="z-l-6 z-d-7">ok</span><span>(</span><span>dtos</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre>
+<p>Related <code>SecurityConfig.java</code>:</p>
+<pre class="giallo z-l-code z-d-code" ><code data-lang="java"><span class="giallo-l"><span class="z-l-5 z-d-3">//</span><span class="z-l-5 z-d-3"> ========== ASSIGNMENT SUBMISSION ==========</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3">//</span><span class="z-l-5 z-d-3"> Submission authors must be authenticated before their personal AI keys can be used.</span></span>
+<span class="giallo-l"><span>.</span><span class="z-l-6 z-d-7">requestMatchers</span><span>(</span><span>HttpMethod</span><span>.</span><span>POST</span><span>,</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">/api/submissions/**</span><span class="z-l-2 z-d-6">&quot;</span><span>)</span><span>.</span><span class="z-l-6 z-d-7">authenticated</span><span>(</span><span>)</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3">//</span><span class="z-l-5 z-d-3"> Assignment file uploads - public (student identity passed in multipart fields)</span></span>
+<span class="giallo-l"><span>.</span><span class="z-l-6 z-d-7">requestMatchers</span><span>(</span><span>HttpMethod</span><span>.</span><span>POST</span><span>,</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">/api/assignment-submissions/upload</span><span class="z-l-2 z-d-6">&quot;</span><span>)</span><span>.</span><span class="z-l-6 z-d-7">permitAll</span><span>(</span><span>)</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3">//</span><span class="z-l-5 z-d-3"> ==========================================</span></span></code></pre><h2 id="impact">Impact<a class="zola-anchor" href="#impact" aria-label="Anchor link for: impact" style="visibility: hidden;"></a>
+</h2>
+<p>Submissions should only be viewable by teachers, admins, and student owners of the submission. Any authenticated user can enumerate any other user's submissions (which should likely be kept secret because they provide answers to assigments), and should be secured as such. This threat model is indicated in other similar endpoints that list submissions:</p>
+<pre class="giallo z-l-code z-d-code" ><code data-lang="java"><span class="giallo-l"><span class="z-l-5 z-d-3">//</span><span class="z-l-5 z-d-3"> src/main/java/com/spring/mvc/assigments/AssignmentsApiController.java</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3">/**</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> * A GET endpoint to retrieve all submissions for the assignment.</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> * </span><span class="z-l-8 z-d-10">@param</span><span class="z-l-9 z-d-12"> assignmentId</span><span class="z-l-5 z-d-3"> The ID of the assignment.</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> * </span><span class="z-l-8 z-d-10">@return</span><span class="z-l-5 z-d-3"> All submissions for the assignment.</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3"> */</span></span>
+<span class="giallo-l"><span>@</span><span class="z-l-8 z-d-10">Transactional</span></span>
+<span class="giallo-l"><span>@</span><span class="z-l-8 z-d-10">GetMapping</span><span>(</span><span class="z-l-2 z-d-6">&quot;</span><span class="z-l-2 z-d-6">/{assignmentId}/submissions</span><span class="z-l-2 z-d-6">&quot;</span><span>)</span></span>
+<span class="giallo-l"><span class="z-l-8 z-d-10">public</span><span> ResponseEntity</span><span class="z-l-8 z-d-10">&lt;</span><span class="z-l-8 z-d-10">?</span><span class="z-l-8 z-d-10">&gt;</span><span class="z-l-6 z-d-7"> getSubmissions</span><span>(</span><span>@</span><span class="z-l-8 z-d-10">PathVariable</span><span> Long</span><span> assignmentId</span><span>,</span><span> @</span><span class="z-l-8 z-d-10">AuthenticationPrincipal</span><span> UserDetails</span><span> userDetails</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span>    String</span><span> uid</span><span class="z-l-8 z-d-10"> =</span><span> userDetails</span><span>.</span><span class="z-l-6 z-d-7">getUsername</span><span>(</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span>    Person</span><span> user</span><span class="z-l-8 z-d-10"> =</span><span> personRepo</span><span>.</span><span class="z-l-6 z-d-7">findByUid</span><span>(</span><span>uid</span><span>)</span><span>;</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-l-8 z-d-10">    if</span><span> (</span><span>user </span><span class="z-l-8 z-d-10">==</span><span class="z-l-1 z-d-4"> null</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span>        logger</span><span>.</span><span class="z-l-6 z-d-7">error</span><span>(</span><span class="z-l-2 z-d-6">&quot;</span><span class="z-l-2 z-d-6">User not found with email: {}</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span><span> uid</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span class="z-l-8 z-d-10">        throw</span><span class="z-l-8 z-d-10"> new</span><span class="z-l-6 z-d-7"> ResponseStatusException</span><span>(</span><span>HttpStatus</span><span>.</span><span>NOT_FOUND</span><span>,</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">User not found with uid: </span><span class="z-l-2 z-d-6">&quot;</span><span class="z-l-8 z-d-10"> +</span><span> uid</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    Stream</span><span>&lt;</span><span class="z-l-8 z-d-10">AssignmentSubmission</span><span>&gt;</span><span> submissions</span><span class="z-l-8 z-d-10"> =</span><span> submissionRepo</span><span>.</span><span class="z-l-6 z-d-7">findByAssignmentId</span><span>(</span><span>assignmentId</span><span>)</span><span>.</span><span class="z-l-6 z-d-7">stream</span><span>(</span><span>)</span><span>;</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-l-8 z-d-10">    if</span><span> (</span><span class="z-l-8 z-d-10">!</span><span>(</span><span>user</span><span>.</span><span class="z-l-6 z-d-7">hasRoleWithName</span><span>(</span><span class="z-l-2 z-d-6">&quot;</span><span class="z-l-2 z-d-6">ROLE_TEACHER</span><span class="z-l-2 z-d-6">&quot;</span><span>)</span><span class="z-l-8 z-d-10"> ||</span><span> user</span><span>.</span><span class="z-l-6 z-d-7">hasRoleWithName</span><span>(</span><span class="z-l-2 z-d-6">&quot;</span><span class="z-l-2 z-d-6">ROLE_ADMIN</span><span class="z-l-2 z-d-6">&quot;</span><span>)</span><span>)</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span class="z-l-5 z-d-3">        //</span><span class="z-l-5 z-d-3"> if they aren&#39;t a teacher or admin, only let them see submissions they are assigned to grade</span></span>
+<span class="giallo-l"><span>        submissions </span><span class="z-l-8 z-d-10">=</span><span> submissions</span></span>
+<span class="giallo-l"><span>            .</span><span class="z-l-6 z-d-7">filter</span><span>(</span><span>submission </span><span class="z-l-8 z-d-10">-&gt;</span><span> submission</span><span>.</span><span class="z-l-6 z-d-7">getAssignedGraders</span><span>(</span><span>)</span><span>.</span><span class="z-l-6 z-d-7">contains</span><span>(</span><span>user</span><span>)</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    List</span><span>&lt;</span><span class="z-l-8 z-d-10">AssignmentSubmissionReturnDto</span><span>&gt;</span><span> returnValue</span><span class="z-l-8 z-d-10"> =</span><span> submissions</span></span>
+<span class="giallo-l"><span>        .</span><span class="z-l-6 z-d-7">map</span><span>(</span><span>AssignmentSubmissionReturnDto</span><span class="z-l-8 z-d-10">:</span><span class="z-l-8 z-d-10">:</span><span class="z-l-8 z-d-10">new</span><span>)</span></span>
+<span class="giallo-l"><span>        .</span><span class="z-l-6 z-d-7">toList</span><span>(</span><span>)</span><span>;</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-l-8 z-d-10">    return</span><span class="z-l-8 z-d-10"> new</span><span> ResponseEntity</span><span>&lt;</span><span>&gt;</span><span>(</span><span>returnValue</span><span>,</span><span> HttpStatus</span><span>.</span><span>OK</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre><h2 id="proof-of-concept-poc">Proof of Concept (PoC)<a class="zola-anchor" href="#proof-of-concept-poc" aria-label="Anchor link for: proof-of-concept-poc" style="visibility: hidden;"></a>
+</h2>
+<p>As per the <code>grading.http</code> doc, as an admin user (<code>hop</code>) we can create a test assignment by sending a <code>POST</code> request to the endpoint <code>/api/assignments/test</code>, and we set the submission mode to link. The assignment I created was given an ID of <code>52</code>.</p>
+<pre class="giallo z-l-code z-d-code" ><code data-lang="plain"><span class="giallo-l"><span>curl -X PUT &#39;http://localhost:8585/api/assignments/52/details&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;User-Agent: yaak&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;Accept: */*&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;Cookie: &lt;admin cookie&gt;&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;Content-Type: application/json&#39; \</span></span>
+<span class="giallo-l"><span>  --data &#39;{</span></span>
+<span class="giallo-l"><span>  &quot;name&quot;: &quot;[TEST] 20261105-090457&quot;,</span></span>
+<span class="giallo-l"><span>  &quot;type&quot;: &quot;test&quot;,</span></span>
+<span class="giallo-l"><span>  &quot;points&quot;: 1,</span></span>
+<span class="giallo-l"><span>  &quot;dueDate&quot;: &quot;11/12/2026&quot;,</span></span>
+<span class="giallo-l"><span>  &quot;assignmentType&quot;: &quot;link&quot;,</span></span>
+<span class="giallo-l"><span>  &quot;description&quot;: &quot;Created by api/grading.http&quot;</span></span>
+<span class="giallo-l"><span>}</span></span>
+<span class="giallo-l"><span>&#39;</span></span></code></pre>
+<p>Then, we create an assignment submission from the student user <code>hop</code>:</p>
+<pre class="giallo z-l-code z-d-code" ><code data-lang="plain"><span class="giallo-l"><span>curl -X POST &#39;http://localhost:8585/api/submissions/submit/52&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;User-Agent: yaak&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;Accept: */*&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;Content-Type: application/json&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;Cookie: &lt;hop cookie&gt;&#39; \</span></span>
+<span class="giallo-l"><span>  --data &#39;{</span></span>
+<span class="giallo-l"><span>  &quot;submitterId&quot;: 4,</span></span>
+<span class="giallo-l"><span>  &quot;isGroup&quot;: false,</span></span>
+<span class="giallo-l"><span>  &quot;content&quot;: { &quot;type&quot;: &quot;link&quot;, &quot;url&quot;: &quot;https://example.com/grading-http/v1&quot;, &quot;notes&quot;: &quot;&quot; },</span></span>
+<span class="giallo-l"><span>  &quot;comment&quot;: &quot;First try&quot;</span></span>
+<span class="giallo-l"><span>}&#39;</span></span></code></pre>
+<p>As another authenticated student who is not <code>hop</code>, we can send a request to view the submissions of <code>hop</code> (ID <code>4</code>) as a different student user, <code>niko</code> (ID <code>7</code>):</p>
+<pre class="giallo z-l-code z-d-code" ><code data-lang="plain"><span class="giallo-l"><span>curl -X GET &#39;http://localhost:8585/api/assignments/submissions/student/4&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;User-Agent: yaak&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;Accept: */*&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;Content-Type: application/json&#39; \</span></span>
+<span class="giallo-l"><span>  --header &#39;Cookie: &lt;niko cookie&gt;&#39; \</span></span>
+<span class="giallo-l"><span>  --data &#39;&#39;</span></span></code></pre>
+<p>The returned data structure is the list of submissions from that user, including assigment details as well as <code>Person</code> object details:</p>
+<pre class="giallo z-l-code z-d-code" ><code data-lang="json"><span class="giallo-l"><span>[</span></span>
+<span class="giallo-l"><span>  {</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">id</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 1</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">assignment</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> {</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">id</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 52</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">name</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">[TEST] 20261105-090457</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">type</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">test</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">description</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">Created by api/grading.http</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">points</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 1.0</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">dueDate</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">11/12/2026</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">timestamp</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">2026-11-05 09:04:57</span><span class="z-l-2 z-d-6">&quot;</span></span>
+<span class="giallo-l"><span>    }</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">submitter</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> {</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">id</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 4</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">email</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">hop@example.com</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">uid</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">hop</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">name</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">Grace Hopper</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">pfp</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">/images/hop.png</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">kasmServerNeeded</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> true</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">sid</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">0000003</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">stats</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> {</span><span>}</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">gradesJson</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> [</span><span>]</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">roles</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> [</span></span>
+<span class="giallo-l"><span>        {</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">id</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 2</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">name</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">ROLE_USER</span><span class="z-l-2 z-d-6">&quot;</span></span>
+<span class="giallo-l"><span>        }</span><span>,</span></span>
+<span class="giallo-l"><span>        {</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">id</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 3</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">name</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">ROLE_STUDENT</span><span class="z-l-2 z-d-6">&quot;</span></span>
+<span class="giallo-l"><span>        }</span></span>
+<span class="giallo-l"><span>      ]</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">banks</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> {</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">id</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 4</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">uid</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">hop</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">balance</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 100000.0</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">loanAmount</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 0.0</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">dailyInterestRate</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 5.0</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">riskCategory</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 1</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">profitMap</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> {</span><span>}</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">featureImportance</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> {</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">loan_history</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 0.2</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">stock_activity</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> -0.3</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">crypto_activity</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> -0.28</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">profit_loss_ratio</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 0.38</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">recent_activity</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 0.35</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">balance_trend</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 0.22</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">volatility</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 0.15</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">casino_frequency</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 0.42</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">loan_balance_ratio</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 0.25</span></span>
+<span class="giallo-l"><span>        }</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">npcProgress</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> {</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">Stock-NPC</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> true</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">Casino-NPC</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">Fidelity</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">Schwab</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">Mining-NPC</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">Crypto-NPC</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">          &quot;</span><span class="z-l-1 z-d-4">Bank-NPC</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span></span>
+<span class="giallo-l"><span>        }</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">username</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">Grace Hopper</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">riskCategoryString</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">Medium Risk</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">        &quot;</span><span class="z-l-1 z-d-4">featureImportanceExplanations</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> [</span></span>
+<span class="giallo-l"><span class="z-l-2 z-d-6">          &quot;</span><span class="z-l-2 z-d-6">Your loan repayment history slightly increases your interest rate</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-2 z-d-6">          &quot;</span><span class="z-l-2 z-d-6">Your stock market investments slightly decreases your interest rate</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-2 z-d-6">          &quot;</span><span class="z-l-2 z-d-6">Your cryptocurrency mining slightly decreases your interest rate</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-2 z-d-6">          &quot;</span><span class="z-l-2 z-d-6">Your gambling win/loss record significantly increases your interest rate</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-2 z-d-6">          &quot;</span><span class="z-l-2 z-d-6">Your recent gambling activity significantly increases your interest rate</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-2 z-d-6">          &quot;</span><span class="z-l-2 z-d-6">Your account balance history slightly increases your interest rate</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-2 z-d-6">          &quot;</span><span class="z-l-2 z-d-6">Your volatility slightly increases your interest rate</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-2 z-d-6">          &quot;</span><span class="z-l-2 z-d-6">Your casino gaming activity significantly increases your interest rate</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-2 z-d-6">          &quot;</span><span class="z-l-2 z-d-6">Your loan-to-balance ratio slightly increases your interest rate</span><span class="z-l-2 z-d-6">&quot;</span></span>
+<span class="giallo-l"><span>        ]</span></span>
+<span class="giallo-l"><span>      }</span></span>
+<span class="giallo-l"><span>    }</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">isGroup</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">content</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> {</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">type</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">link</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">url</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">https://example.com/grading-http/v1</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">notes</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">&quot;</span></span>
+<span class="giallo-l"><span>    }</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">comment</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">First try</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">grade</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">feedback</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">isLate</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">aiSummary</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">qualityScore</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">grading</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span> {</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">submissionId</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 1</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">revision</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> 1</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">effectiveGrade</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">effectiveFeedback</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">gradedAt</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">aiGrade</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">aiFeedback</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">qualityScore</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">manualOverride</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">manualGrade</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">manualFeedback</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">needsAiRegrade</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">closedAt</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">source</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">NONE</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">      &quot;</span><span class="z-l-1 z-d-4">closed</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> false</span></span>
+<span class="giallo-l"><span>    }</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">technicalExcellence</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">communication</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">workHabits</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">aiOrchestration</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span><span>,</span></span>
+<span class="giallo-l"><span class="z-l-1 z-d-4">    &quot;</span><span class="z-l-1 z-d-4">selfAssessmentReflection</span><span class="z-l-1 z-d-4">&quot;</span><span>:</span><span class="z-l-1 z-d-4"> null</span></span>
+<span class="giallo-l"><span>  }</span></span>
+<span class="giallo-l"><span>]</span></span></code></pre><h2 id="suggested-fix">Suggested Fix<a class="zola-anchor" href="#suggested-fix" aria-label="Anchor link for: suggested-fix" style="visibility: hidden;"></a>
+</h2>
+<p>The fix would be a simple implementation that has already been done for other endpoints. Just pass an <code>AuthenticationPrincipal</code> as a paramter and check if the user requesting the information is the owner of that submission, an admin, or a teacher.</p>
+<h2 id="references">References<a class="zola-anchor" href="#references" aria-label="Anchor link for: references" style="visibility: hidden;"></a>
+</h2>
+<p>This section intentionally left blank.</p>
+<h2 id="notes">Notes<a class="zola-anchor" href="#notes" aria-label="Anchor link for: notes" style="visibility: hidden;"></a>
+</h2>
+<p>This section intentionally left blank.</p>
+
+      </article>
+
+      
+      
+
+      
+      
+    </div>
+
+    
+
+  
+  
+
+<footer>
+  <div class="left">
+    <div class="copyright">
+      © 2026 OCS VRE Team
+      
+      <span>|</span>
+      Built with <a href="https://www.getzola.org" rel="noreferrer" target="_blank">zola</a> and <a href="https://github.com/isunjn/serene" rel="noreferrer" target="_blank">serene</a>
+      
+    </div>
+  </div>
+
+  <div class="right">
+    
+    <a id="rss-btn" href="https://csa-admin-ocs.github.io/vre-disclosures/posts/feed.xml">RSS</a>
+    
+
+    
+    
+    
+    <button id="theme-toggle" aria-label="theme switch">
+      <span class="moon-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z" fill="currentColor"></path></svg>
+</span>
+      <span class="sun-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z" fill="currentColor"></path></svg>
+</span>
+    </button>
+    
+  </div>
+</footer>
+
+
+
+<dialog id="rss-mask">
+  <div>
+    <a href="https://csa-admin-ocs.github.io/vre-disclosures/posts/feed.xml">https://csa-admin-ocs.github.io/vre-disclosures/posts/feed.xml</a>
+    
+    
+    <button autofocus aria-label="copy" data-link="https://csa-admin-ocs.github.io/vre-disclosures/posts/feed.xml" data-copy-icon="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;18&quot; height=&quot;18&quot;&gt;&lt;path d=&quot;M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+" data-check-icon="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;18&quot; height=&quot;18&quot;&gt;&lt;path d=&quot;M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05093 10.2212L10.0007 15.1709Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+" >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z" fill="currentColor"></path></svg>
+
+    </button>
+  </div>
+</dialog>
+
+
+  </main>
+</div>
+
+  
+<script src="/js/lightense.min.js"></script>
+
+
+
+  <script src="https://csa-admin-ocs.github.io/vre-disclosures/js/main.js"></script>
+</body>
+
+</html>

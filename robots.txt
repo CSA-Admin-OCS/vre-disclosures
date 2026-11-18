@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://csa-admin-ocs.github.io/vre-disclosures/sitemap.xml
